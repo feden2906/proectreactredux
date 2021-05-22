@@ -23,7 +23,9 @@ const Counter = () => {
           dispatch({ type: "RESET" });
         }}>reset</button>
       <hr/>
-      <input type="number" value={value} onChange={({target:{value}})=>setValue(value)}/>
+         <p>Введіть число на яке потрібно збільшити counter</p>
+
+        <input type="number" value={value} onChange={({target:{value}})=>setValue(value)}/>
 
      <button
         onClick={() => {
@@ -46,8 +48,7 @@ export default function App() {
         reducer винесена в окремий файл!
       </h4>
       <hr/>
-      <Counter />
-      <p>Введіть число на яке потрібно збільшити counter</p>
+        <Counter />
     </div>
   );
 }
