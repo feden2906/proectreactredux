@@ -1,7 +1,7 @@
 import './App.css';
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import "./styles.css";
+
 
 const Counter = () => {
   const counter = useSelector(({ counter }) => counter);
